@@ -113,9 +113,9 @@ export default class Table extends Component {
             });
     }
 
-    editBook(id, title, author, publisher, genre) {
+    editBook(title, author, publisher, genre, id) {
         Axios
-            .post('http://localhost:8080/books/' + id, {
+            .put('http://localhost:8080/books/' + id, {
                 'title': title,
                 'author': author,
                 'publisher': publisher,

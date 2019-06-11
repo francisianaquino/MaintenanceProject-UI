@@ -82,8 +82,8 @@ export default class AddBookForm extends Component {
                     </Modal.Body>
                     <Modal.Footer>
                         <Button onClick={this.props.handleCloseEdit}>Close</Button>
-                        <Button onClick={(event) => this.props.handleEdit(this.state.title, 
-                            this.state.author, this.state.publisher, this.state.genre, this.props.id)}>
+                        <Button onClick={() => this.props.handleEdit(this.state.title, 
+                            this.state.author, this.state.publisher, this.state.genre, this.state.id)}>
                             Update
                         </Button>
                     </Modal.Footer>
